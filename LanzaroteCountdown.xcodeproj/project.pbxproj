@@ -13,6 +13,20 @@
 		F3B901251AB5F15F00EED8D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B901241AB5F15F00EED8D2 /* Images.xcassets */; };
 		F3B901281AB5F15F00EED8D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B901261AB5F15F00EED8D2 /* LaunchScreen.xib */; };
 		F3B901341AB5F16000EED8D2 /* LanzaroteCountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B901331AB5F16000EED8D2 /* LanzaroteCountdownTests.swift */; };
+		F3B901401AB604AA00EED8D2 /* el_golfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3B9013F1AB604AA00EED8D2 /* el_golfo.jpg */; };
+		F3B901421AB7617400EED8D2 /* brandung.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3B901411AB7617400EED8D2 /* brandung.jpg */; };
+		F3B901441AB7617800EED8D2 /* jameo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3B901431AB7617800EED8D2 /* jameo.jpg */; };
+		F3B901461AB7617F00EED8D2 /* vulkan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3B901451AB7617F00EED8D2 /* vulkan.jpg */; };
+		F3B901481AB7618B00EED8D2 /* winreben.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3B901471AB7618B00EED8D2 /* winreben.jpg */; };
+		F3B9014A1AB7781900EED8D2 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B901491AB7781900EED8D2 /* BackgroundImage.swift */; };
+		F3BE72691ABC155C00892D7A /* TimeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE72681ABC155C00892D7A /* TimeCalculation.swift */; };
+		F3BE72711ABC5AA500892D7A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BE72701ABC5AA500892D7A /* NotificationCenter.framework */; };
+		F3BE72761ABC5AA500892D7A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE72751ABC5AA500892D7A /* TodayViewController.swift */; };
+		F3BE72781ABC5AA500892D7A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BE72771ABC5AA500892D7A /* MainInterface.storyboard */; };
+		F3BE727B1ABC5AA500892D7A /* LanzaroteWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3BE726E1ABC5AA500892D7A /* LanzaroteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3BE72831ABC5F4000892D7A /* TimeCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE72681ABC155C00892D7A /* TimeCalculation.swift */; };
+		F3BE72851ABC5F7600892D7A /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE72841ABC5F7600892D7A /* Timer.swift */; };
+		F3BE72861ABC5F7600892D7A /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE72841ABC5F7600892D7A /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +37,28 @@
 			remoteGlobalIDString = F3B901171AB5F15D00EED8D2;
 			remoteInfo = LanzaroteCountdown;
 		};
+		F3BE72791ABC5AA500892D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B901101AB5F15C00EED8D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3BE726D1ABC5AA500892D7A;
+			remoteInfo = LanzaroteWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3BE727F1ABC5AA500892D7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3BE727B1ABC5AA500892D7A /* LanzaroteWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F3B901181AB5F15E00EED8D2 /* LanzaroteCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanzaroteCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,19 @@
 		F3B9012D1AB5F16000EED8D2 /* LanzaroteCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanzaroteCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B901321AB5F16000EED8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B901331AB5F16000EED8D2 /* LanzaroteCountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanzaroteCountdownTests.swift; sourceTree = "<group>"; };
+		F3B9013F1AB604AA00EED8D2 /* el_golfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = el_golfo.jpg; sourceTree = "<group>"; };
+		F3B901411AB7617400EED8D2 /* brandung.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brandung.jpg; sourceTree = "<group>"; };
+		F3B901431AB7617800EED8D2 /* jameo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jameo.jpg; sourceTree = "<group>"; };
+		F3B901451AB7617F00EED8D2 /* vulkan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vulkan.jpg; sourceTree = "<group>"; };
+		F3B901471AB7618B00EED8D2 /* winreben.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winreben.jpg; sourceTree = "<group>"; };
+		F3B901491AB7781900EED8D2 /* BackgroundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		F3BE72681ABC155C00892D7A /* TimeCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCalculation.swift; sourceTree = "<group>"; };
+		F3BE726E1ABC5AA500892D7A /* LanzaroteWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LanzaroteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BE72701ABC5AA500892D7A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F3BE72741ABC5AA500892D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BE72751ABC5AA500892D7A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F3BE72771ABC5AA500892D7A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F3BE72841ABC5F7600892D7A /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3BE726B1ABC5AA500892D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BE72711ABC5AA500892D7A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +117,8 @@
 			children = (
 				F3B9011A1AB5F15E00EED8D2 /* LanzaroteCountdown */,
 				F3B901301AB5F16000EED8D2 /* LanzaroteCountdownTests */,
+				F3BE72721ABC5AA500892D7A /* LanzaroteWidget */,
+				F3BE726F1ABC5AA500892D7A /* Frameworks */,
 				F3B901191AB5F15E00EED8D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +128,7 @@
 			children = (
 				F3B901181AB5F15E00EED8D2 /* LanzaroteCountdown.app */,
 				F3B9012D1AB5F16000EED8D2 /* LanzaroteCountdownTests.xctest */,
+				F3BE726E1ABC5AA500892D7A /* LanzaroteWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +139,9 @@
 				F3B9011D1AB5F15E00EED8D2 /* AppDelegate.swift */,
 				F3B9011F1AB5F15E00EED8D2 /* ViewController.swift */,
 				F3B901211AB5F15F00EED8D2 /* Main.storyboard */,
+				F3B901491AB7781900EED8D2 /* BackgroundImage.swift */,
+				F3BE72841ABC5F7600892D7A /* Timer.swift */,
+				F3BE72681ABC155C00892D7A /* TimeCalculation.swift */,
 				F3B901241AB5F15F00EED8D2 /* Images.xcassets */,
 				F3B901261AB5F15F00EED8D2 /* LaunchScreen.xib */,
 				F3B9011B1AB5F15E00EED8D2 /* Supporting Files */,
@@ -90,6 +152,11 @@
 		F3B9011B1AB5F15E00EED8D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3B901411AB7617400EED8D2 /* brandung.jpg */,
+				F3B901471AB7618B00EED8D2 /* winreben.jpg */,
+				F3B901451AB7617F00EED8D2 /* vulkan.jpg */,
+				F3B901431AB7617800EED8D2 /* jameo.jpg */,
+				F3B9013F1AB604AA00EED8D2 /* el_golfo.jpg */,
 				F3B9011C1AB5F15E00EED8D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +179,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F3BE726F1ABC5AA500892D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE72701ABC5AA500892D7A /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3BE72721ABC5AA500892D7A /* LanzaroteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE72751ABC5AA500892D7A /* TodayViewController.swift */,
+				F3BE72771ABC5AA500892D7A /* MainInterface.storyboard */,
+				F3BE72731ABC5AA500892D7A /* Supporting Files */,
+			);
+			path = LanzaroteWidget;
+			sourceTree = "<group>";
+		};
+		F3BE72731ABC5AA500892D7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE72741ABC5AA500892D7A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +215,12 @@
 				F3B901141AB5F15D00EED8D2 /* Sources */,
 				F3B901151AB5F15D00EED8D2 /* Frameworks */,
 				F3B901161AB5F15D00EED8D2 /* Resources */,
+				F3BE727F1ABC5AA500892D7A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F3BE727A1ABC5AA500892D7A /* PBXTargetDependency */,
 			);
 			name = LanzaroteCountdown;
 			productName = LanzaroteCountdown;
@@ -150,6 +245,23 @@
 			productReference = F3B9012D1AB5F16000EED8D2 /* LanzaroteCountdownTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F3BE726D1ABC5AA500892D7A /* LanzaroteWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3BE727C1ABC5AA500892D7A /* Build configuration list for PBXNativeTarget "LanzaroteWidget" */;
+			buildPhases = (
+				F3BE726A1ABC5AA500892D7A /* Sources */,
+				F3BE726B1ABC5AA500892D7A /* Frameworks */,
+				F3BE726C1ABC5AA500892D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanzaroteWidget;
+			productName = LanzaroteWidget;
+			productReference = F3BE726E1ABC5AA500892D7A /* LanzaroteWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +273,15 @@
 				TargetAttributes = {
 					F3B901171AB5F15D00EED8D2 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z6946K9NFZ;
 					};
 					F3B9012C1AB5F16000EED8D2 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = F3B901171AB5F15D00EED8D2;
+					};
+					F3BE726D1ABC5AA500892D7A = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z6946K9NFZ;
 					};
 				};
 			};
@@ -183,6 +300,7 @@
 			targets = (
 				F3B901171AB5F15D00EED8D2 /* LanzaroteCountdown */,
 				F3B9012C1AB5F16000EED8D2 /* LanzaroteCountdownTests */,
+				F3BE726D1ABC5AA500892D7A /* LanzaroteWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -192,8 +310,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B901441AB7617800EED8D2 /* jameo.jpg in Resources */,
 				F3B901231AB5F15F00EED8D2 /* Main.storyboard in Resources */,
+				F3B901421AB7617400EED8D2 /* brandung.jpg in Resources */,
 				F3B901281AB5F15F00EED8D2 /* LaunchScreen.xib in Resources */,
+				F3B901461AB7617F00EED8D2 /* vulkan.jpg in Resources */,
+				F3B901481AB7618B00EED8D2 /* winreben.jpg in Resources */,
+				F3B901401AB604AA00EED8D2 /* el_golfo.jpg in Resources */,
 				F3B901251AB5F15F00EED8D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +328,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3BE726C1ABC5AA500892D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BE72781ABC5AA500892D7A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,7 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B9014A1AB7781900EED8D2 /* BackgroundImage.swift in Sources */,
 				F3B901201AB5F15E00EED8D2 /* ViewController.swift in Sources */,
+				F3BE72691ABC155C00892D7A /* TimeCalculation.swift in Sources */,
+				F3BE72851ABC5F7600892D7A /* Timer.swift in Sources */,
 				F3B9011E1AB5F15E00EED8D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +359,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3BE726A1ABC5AA500892D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BE72861ABC5F7600892D7A /* Timer.swift in Sources */,
+				F3BE72831ABC5F4000892D7A /* TimeCalculation.swift in Sources */,
+				F3BE72761ABC5AA500892D7A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = F3B901171AB5F15D00EED8D2 /* LanzaroteCountdown */;
 			targetProxy = F3B9012E1AB5F16000EED8D2 /* PBXContainerItemProxy */;
+		};
+		F3BE727A1ABC5AA500892D7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3BE726D1ABC5AA500892D7A /* LanzaroteWidget */;
+			targetProxy = F3BE72791ABC5AA500892D7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,9 +487,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LanzaroteCountdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,9 +503,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LanzaroteCountdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -388,6 +549,34 @@
 			};
 			name = Release;
 		};
+		F3BE727D1ABC5AA500892D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LanzaroteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F3BE727E1ABC5AA500892D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LanzaroteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,12 +596,22 @@
 				F3B901391AB5F16000EED8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3B9013A1AB5F16000EED8D2 /* Build configuration list for PBXNativeTarget "LanzaroteCountdownTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3B9013B1AB5F16000EED8D2 /* Debug */,
 				F3B9013C1AB5F16000EED8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3BE727C1ABC5AA500892D7A /* Build configuration list for PBXNativeTarget "LanzaroteWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3BE727D1ABC5AA500892D7A /* Debug */,
+				F3BE727E1ABC5AA500892D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
