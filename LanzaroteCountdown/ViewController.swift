@@ -17,13 +17,14 @@ class ViewController: UIViewController {
     var images:[BackgroundImage] = []
     var currentImage = 0
     let maxImage = 4
-    var timeCalc = TimeCalculation()
+    var timeCalc = CountdownTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         initializeImages()
+        timeCalc.initTimer()
         
         var timer = NSTimer()
         var imgReset = NSTimer()
@@ -41,6 +42,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
+    // tried to set position dynamically, but didn't worked. So currently removed
     func setCountdownPosition() {
         var bounds: CGRect = UIScreen.mainScreen().bounds
         var width:CGFloat = bounds.size.width
@@ -49,6 +52,7 @@ class ViewController: UIViewController {
         println( "\(height)" )
         countDownLabel.center = CGPoint(x: width * 1.0 / 2.0, y: height - 350.0)
     }
+    */
     
     func setBadgeIcon() {
         let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
@@ -59,7 +63,6 @@ class ViewController: UIViewController {
             UIUserNotificationType.Badge, categories: nil
             ))
         
-        computeDateTime()
         application.applicationIconBadgeNumber = timeCalc.day
     }
     
@@ -86,7 +89,6 @@ class ViewController: UIViewController {
     }
     
     func timeUntilDeparture() {
-        computeDateTime()
         var output = ""
         
         if timeCalc.year > 1 {
@@ -130,23 +132,6 @@ class ViewController: UIViewController {
         }
         
         countDownLabel.text = output
-    }
-    
-    func computeDateTime() {
-        let flightDate = NSCalendar.currentCalendar().dateWithEra(1, year: 2015, month: 3, day: 29, hour: 8, minute: 35, second: 0, nanosecond: 0)
-        let nowDate = NSDate()
-        
-        let components = NSCalendar.currentCalendar().components(.CalendarUnitSecond |
-            .CalendarUnitMinute | .CalendarUnitHour | .CalendarUnitDay |
-            .CalendarUnitMonth | .CalendarUnitYear, fromDate: nowDate,
-            toDate: flightDate!, options: nil)
-        
-        timeCalc.second = components.second
-        timeCalc.minute = components.minute
-        timeCalc.hour = components.hour
-        timeCalc.day = components.day
-        timeCalc.month = components.month
-        timeCalc.year = components.year
     }
     
     func initializeImages() {

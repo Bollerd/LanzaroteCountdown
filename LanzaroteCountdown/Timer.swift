@@ -15,21 +15,22 @@ class CountdownTimer {
     var hour = 0
     var minute = 0
     var second = 0
+    var kFlightDate = NSCalendar.currentCalendar().dateWithEra(1, year: 2015, month: 3, day: 29, hour: 8, minute: 35, second: 0, nanosecond: 0)
     
-    func initTimer(){
-        var timer = NSTimer()
+    func initTimer() {
+        _computeDateTime()
+        var classTimer = NSTimer()
     
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("computeDateTime"), userInfo: nil, repeats: true)
+        classTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("_computeDateTime"), userInfo: nil, repeats: true)
     }
     
-    func computeDateTime() {
-        let flightDate = NSCalendar.currentCalendar().dateWithEra(1, year: 2015, month: 3, day: 29, hour: 8, minute: 35, second: 0, nanosecond: 0)
+    dynamic func _computeDateTime() {
         let nowDate = NSDate()
         
         let components = NSCalendar.currentCalendar().components(.CalendarUnitSecond |
             .CalendarUnitMinute | .CalendarUnitHour | .CalendarUnitDay |
             .CalendarUnitMonth | .CalendarUnitYear, fromDate: nowDate,
-            toDate: flightDate!, options: nil)
+            toDate: kFlightDate!, options: nil)
         
         self.second = components.second
         self.minute = components.minute
@@ -38,4 +39,5 @@ class CountdownTimer {
         self.month = components.month
         self.year = components.year
     }
+
 }

@@ -13,11 +13,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var counterWidgetLabel: UILabel!
     
-    var timeCalc = TimeCalculation()
+    var timeCalc = CountdownTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        
+        timeCalc.initTimer()
         
         var timer = NSTimer()
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("timeUntilDeparture"), userInfo: nil, repeats: true)
@@ -39,7 +41,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func timeUntilDeparture() {
-        computeDateTime()
         var output = ""
         
         if timeCalc.year > 0 {
@@ -69,23 +70,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
         
         counterWidgetLabel.text = output
-    }
-    
-    func computeDateTime() {
-        let flightDate = NSCalendar.currentCalendar().dateWithEra(1, year: 2015, month: 3, day: 29, hour: 8, minute: 35, second: 0, nanosecond: 0)
-        let nowDate = NSDate()
-        
-        let components = NSCalendar.currentCalendar().components(.CalendarUnitSecond |
-            .CalendarUnitMinute | .CalendarUnitHour | .CalendarUnitDay |
-            .CalendarUnitMonth | .CalendarUnitYear, fromDate: nowDate,
-            toDate: flightDate!, options: nil)
-        
-        timeCalc.second = components.second
-        timeCalc.minute = components.minute
-        timeCalc.hour = components.hour
-        timeCalc.day = components.day
-        timeCalc.month = components.month
-        timeCalc.year = components.year
     }
     
     func checkEmpty(piv_input:String) -> String {
