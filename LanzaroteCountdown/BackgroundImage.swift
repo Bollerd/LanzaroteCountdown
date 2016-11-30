@@ -11,7 +11,7 @@ import UIKit
 
 struct BackgroundImage {
     var image = UIImage(named:"")
-    var titleColor = UIColor.blackColor()
-    var counterColor = UIColor.blackColor()
+    var titleColor = UIColor.black
+    var counterColor = UIColor.black
     var title = ""
 }

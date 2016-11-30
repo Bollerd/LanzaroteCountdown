@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3552FD11DAF5FF8003CA52B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3552FD01DAF5FF8003CA52B /* Extensions.swift */; };
+		F3552FD21DAF60BB003CA52B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3552FD01DAF5FF8003CA52B /* Extensions.swift */; };
 		F3B9011E1AB5F15E00EED8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9011D1AB5F15E00EED8D2 /* AppDelegate.swift */; };
 		F3B901201AB5F15E00EED8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9011F1AB5F15E00EED8D2 /* ViewController.swift */; };
 		F3B901231AB5F15F00EED8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B901211AB5F15F00EED8D2 /* Main.storyboard */; };
@@ -61,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F3552FD01DAF5FF8003CA52B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = LanzaroteCountdown/Extensions.swift; sourceTree = SOURCE_ROOT; };
 		F3B901181AB5F15E00EED8D2 /* LanzaroteCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanzaroteCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B9011C1AB5F15E00EED8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B9011D1AB5F15E00EED8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		F3B9010F1AB5F15C00EED8D2 = {
 			isa = PBXGroup;
 			children = (
+				F3552FD01DAF5FF8003CA52B /* Extensions.swift */,
 				F3B9011A1AB5F15E00EED8D2 /* LanzaroteCountdown */,
 				F3B901301AB5F16000EED8D2 /* LanzaroteCountdownTests */,
 				F3BE72721ABC5AA500892D7A /* LanzaroteWidget */,
@@ -268,20 +272,24 @@
 		F3B901101AB5F15C00EED8D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Dirk Boller";
 				TargetAttributes = {
 					F3B901171AB5F15D00EED8D2 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = Z6946K9NFZ;
+						LastSwiftMigration = 0800;
 					};
 					F3B9012C1AB5F16000EED8D2 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = F3B901171AB5F15D00EED8D2;
 					};
 					F3BE726D1ABC5AA500892D7A = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = Z6946K9NFZ;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -344,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B9014A1AB7781900EED8D2 /* BackgroundImage.swift in Sources */,
+				F3552FD11DAF5FF8003CA52B /* Extensions.swift in Sources */,
 				F3B901201AB5F15E00EED8D2 /* ViewController.swift in Sources */,
 				F3BE72691ABC155C00892D7A /* TimeCalculation.swift in Sources */,
 				F3BE72851ABC5F7600892D7A /* Timer.swift in Sources */,
@@ -366,6 +375,7 @@
 				F3BE72861ABC5F7600892D7A /* Timer.swift in Sources */,
 				F3BE72831ABC5F4000892D7A /* TimeCalculation.swift in Sources */,
 				F3BE72761ABC5AA500892D7A /* TodayViewController.swift in Sources */,
+				F3552FD21DAF60BB003CA52B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -511,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -530,6 +542,7 @@
 				INFOPLIST_FILE = LanzaroteCountdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanzaroteCountdown.app/LanzaroteCountdown";
 			};
 			name = Debug;
@@ -545,6 +558,7 @@
 				INFOPLIST_FILE = LanzaroteCountdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanzaroteCountdown.app/LanzaroteCountdown";
 			};
 			name = Release;
@@ -562,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -574,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -614,6 +630,7 @@
 				F3BE727E1ABC5AA500892D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

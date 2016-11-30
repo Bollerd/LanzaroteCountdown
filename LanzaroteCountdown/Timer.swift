@@ -15,29 +15,53 @@ class CountdownTimer {
     var hour = 0
     var minute = 0
     var second = 0
-    var kFlightDate = NSCalendar.currentCalendar().dateWithEra(1, year: 2015, month: 3, day: 29, hour: 8, minute: 35, second: 0, nanosecond: 0)
+    var totalDays = 0
     
     func initTimer() {
         _computeDateTime()
-        var classTimer = NSTimer()
+        var classTimer = Timer()
     
-        classTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("_computeDateTime"), userInfo: nil, repeats: true)
+        classTimer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(CountdownTimer._computeDateTime), userInfo: nil, repeats: true)
     }
     
     dynamic func _computeDateTime() {
-        let nowDate = NSDate()
+        let components = Date.getFormattedTimeDifferenceToToday(otherDate: "04-09-2017 04:45", dateFormat: "MM-dd-yyyy hh:mm")
+       
+        if let s = components.second {
+            self.second = s
+        } else {
+            self.second = 0
+        }
         
-        let components = NSCalendar.currentCalendar().components(.CalendarUnitSecond |
-            .CalendarUnitMinute | .CalendarUnitHour | .CalendarUnitDay |
-            .CalendarUnitMonth | .CalendarUnitYear, fromDate: nowDate,
-            toDate: kFlightDate!, options: nil)
+        if let m = components.minute {
+            self.minute = m
+        } else {
+            self.minute = 0
+        }
         
-        self.second = components.second
-        self.minute = components.minute
-        self.hour = components.hour
-        self.day = components.day
-        self.month = components.month
-        self.year = components.year
+        if let h = components.hour {
+            self.hour = h
+        } else {
+            self.hour = 0
+        }
+        
+        if let d = components.day {
+            self.day = d
+        } else {
+            self.day = 0
+        }
+        
+        if let m = components.month {
+            self.month = m
+        } else {
+            self.month = 0
+        }
+        if let y = components.year {
+            self.year = y
+        } else {
+            self.year = 0
+        }
+        
+        totalDays = Date.getDaysDifferenceToToday(otherDate: "04-09-2017 04:45", dateFormat: "MM-dd-yyyy hh:mm")
     }
-
 }

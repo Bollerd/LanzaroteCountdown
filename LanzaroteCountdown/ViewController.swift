@@ -26,23 +26,17 @@ class ViewController: UIViewController {
         initializeImages()
         timeCalc.initTimer()
         
-        var timer = NSTimer()
-        var imgReset = NSTimer()
+        var timer = Timer()
+        var imgReset = Timer()
   
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("timeUntilDeparture"), userInfo: nil, repeats: true)
-        
-        imgReset = NSTimer.scheduledTimerWithTimeInterval(10.0, target:self, selector: Selector("changeBackground"), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(ViewController.timeUntilDeparture), userInfo: nil, repeats: true)
+        imgReset = Timer.scheduledTimer(timeInterval: 10.0, target:self, selector: #selector(ViewController.changeBackground), userInfo: nil, repeats: true)
         
         setBadgeIcon()
         //setCountdownPosition()     "currently not used as not working
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
+   /*
     // tried to set position dynamically, but didn't worked. So currently removed
     func setCountdownPosition() {
         var bounds: CGRect = UIScreen.mainScreen().bounds
@@ -55,15 +49,13 @@ class ViewController: UIViewController {
     */
     
     func setBadgeIcon() {
-        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        let settings = UIUserNotificationSettings(types: UIUserNotificationType.badge, categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(settings)
 
-        let application = UIApplication.sharedApplication()
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert |
-            UIUserNotificationType.Badge, categories: nil
-            ))
+        let application = UIApplication.shared
         
-        application.applicationIconBadgeNumber = timeCalc.day
+    //    application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Badge, UIUserNotificationType.Alert, UIUserNotificationType.Sound], categories: nil))  -> SWIFT 3 UPGRAGE - seems not required
+        application.applicationIconBadgeNumber = timeCalc.totalDays
     }
     
     func changeBackground() {
@@ -80,7 +72,7 @@ class ViewController: UIViewController {
         self.countDownLabel.textColor = self.images[currentImage].counterColor
         self.headerLabel.text = self.images[currentImage].title
         
-        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations:
+        UIView.transition(with: self.view, duration: 2, options: UIViewAnimationOptions.transitionCrossDissolve, animations:
             {
                 self.image.image = self.images[self.currentImage].image
                 
@@ -104,25 +96,21 @@ class ViewController: UIViewController {
         }
         
         if timeCalc.day > 1 {
-            output = checkEmpty(output)
-+ "\(timeCalc.day) Tage "
+            output = checkEmpty(output) + "\(timeCalc.day) Tage "
         } else if timeCalc.year == 1 {
-            output =  checkEmpty(output)
-+ "\(timeCalc.year) Tag "
+            output =  checkEmpty(output) + "\(timeCalc.year) Tag "
         }
         
         if timeCalc.hour > 1 {
-            output = checkEmpty(output)
- + "\(timeCalc.hour) Stunden "
+            output = checkEmpty(output) + "\(timeCalc.hour) Stunden "
         } else if timeCalc.hour == 1 {
-            output =  checkEmpty(output)
-+ "\(timeCalc.hour) Stunde "
+            output =  checkEmpty(output) + "\(timeCalc.hour) Stunde "
         }
         
         if timeCalc.minute > 1 {
             output = checkEmpty(output) + "\(timeCalc.minute) Minuten "
         } else if timeCalc.minute == 1 {
-             output = checkEmpty(output) + "\(timeCalc.minute) Minute "
+            output = checkEmpty(output) + "\(timeCalc.minute) Minute "
         }
         
         if timeCalc.second > 1 {
@@ -138,41 +126,41 @@ class ViewController: UIViewController {
         // create my background images
         var img1 = BackgroundImage()
         img1.title = "Los Hervideros"
-        img1.counterColor = UIColor.blackColor()
-        img1.titleColor = UIColor.blackColor()
+        img1.counterColor = UIColor.black
+        img1.titleColor = UIColor.black
         img1.image = UIImage(named:"brandung.jpg")
         images.append(img1)
         
         var img2 = BackgroundImage()
         img2.title = "Weinreben"
-        img2.counterColor = UIColor.blackColor() //UIColor.whiteColor()
-        img2.titleColor = UIColor.blackColor() //UIColor.whiteColor()
+        img2.counterColor = UIColor.black //UIColor.whiteColor()
+        img2.titleColor = UIColor.black //UIColor.whiteColor()
         img2.image = UIImage(named:"winreben.jpg")
         images.append(img2)
         
         var img3 = BackgroundImage()
         img3.title = "Timanfaya"
-        img3.counterColor = UIColor.blackColor() //UIColor.whiteColor()
-        img3.titleColor = UIColor.blackColor() //UIColor.whiteColor()
+        img3.counterColor = UIColor.black //UIColor.whiteColor()
+        img3.titleColor = UIColor.black //UIColor.whiteColor()
         img3.image = UIImage(named:"vulkan.jpg")
         images.append(img3)
         
         var img4 = BackgroundImage()
         img4.title = "Jameo del Aqua"
-        img4.counterColor = UIColor.blackColor()
-        img4.titleColor = UIColor.blackColor() // UIColor.whiteColor()
+        img4.counterColor = UIColor.black
+        img4.titleColor = UIColor.black // UIColor.whiteColor()
         img4.image = UIImage(named:"jameo.jpg")
         images.append(img4)
         
         var img5 = BackgroundImage()
         img5.title = "El Golfo"
-        img5.counterColor = UIColor.blackColor() //UIColor.whiteColor()
-        img5.titleColor = UIColor.blackColor()
+        img5.counterColor = UIColor.black //UIColor.whiteColor()
+        img5.titleColor = UIColor.black
         img5.image = UIImage(named:"el_golfo.jpg")
         images.append(img5)
     }
     
-    func checkEmpty(piv_input:String) -> String {
+    func checkEmpty(_ piv_input:String) -> String {
         var output = piv_input
         
         if output != "" {

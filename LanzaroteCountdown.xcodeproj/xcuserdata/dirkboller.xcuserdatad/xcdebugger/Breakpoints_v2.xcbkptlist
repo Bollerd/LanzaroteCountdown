@@ -22,85 +22,46 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LanzaroteCountdown.ViewController.timeCalc.getter : LanzaroteCountdown.CountdownTimer"
-                  moduleName = "LanzaroteCountdown"
-                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.887214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
                   symbolName = "LanzaroteCountdown.ViewController.timeCalc.setter : LanzaroteCountdown.CountdownTimer"
                   moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.88753"
+                  timestampString = "498033371.539511"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "63">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LanzaroteCountdown.ViewController.timeCalc.materializeForSet : LanzaroteCountdown.CountdownTimer"
+                  symbolName = "LanzaroteCountdown.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; LanzaroteCountdown.ViewController"
                   moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.887731"
+                  timestampString = "498033371.543002"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "355">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LanzaroteCountdown.ViewController.init (LanzaroteCountdown.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; LanzaroteCountdown.ViewController"
+                  symbolName = "LanzaroteCountdown.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;LanzaroteCountdown.ViewController&gt;"
                   moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.8879"
+                  timestampString = "498033371.546743"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "624">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LanzaroteCountdown.ViewController.init (LanzaroteCountdown.ViewController.Type)() -&gt; LanzaroteCountdown.ViewController"
-                  moduleName = "LanzaroteCountdown"
-                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.888176"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "552">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LanzaroteCountdown.ViewController.init (LanzaroteCountdown.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; LanzaroteCountdown.ViewController"
-                  moduleName = "LanzaroteCountdown"
-                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/ViewController.swift"
-                  timestampString = "448555241.888324"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "556">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "258">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -118,23 +79,7 @@
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LanzaroteCountdown/ViewController.swift"
-            timestampString = "448556948.522585"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "timeUntilDeparture()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,13 +89,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LanzaroteCountdown/Timer.swift"
-            timestampString = "448556891.923614"
+            timestampString = "498035312.842505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "initTimer()"
-            landmarkType = "5">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CountdownTimer"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.614119"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.setter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.61759"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,13 +137,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LanzaroteCountdown/Timer.swift"
-            timestampString = "448556891.923614"
+            timestampString = "498035312.842505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "computeDateTime()"
-            landmarkType = "5">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CountdownTimer"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.641847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.setter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.645525"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.init () -&gt; LanzaroteCountdown.CountdownTimer"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.649419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "57">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,13 +200,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LanzaroteCountdown/Timer.swift"
-            timestampString = "448556891.923614"
+            timestampString = "498035312.842505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "initTimer()"
-            landmarkType = "5">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CountdownTimer"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.656124"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.kFlightDate.setter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.659441"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LanzaroteCountdown.CountdownTimer.init () -&gt; LanzaroteCountdown.CountdownTimer"
+                  moduleName = "LanzaroteCountdown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dirkboller/Documents/XCode/LanzaroteCountdown/LanzaroteCountdown/Timer.swift"
+                  timestampString = "498033371.664584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "57">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

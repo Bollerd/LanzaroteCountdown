@@ -21,8 +21,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         timeCalc.initTimer()
         
-        var timer = NSTimer()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: Selector("timeUntilDeparture"), userInfo: nil, repeats: true)
+        var timer = Timer()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(TodayViewController.timeUntilDeparture), userInfo: nil, repeats: true)
         }
     
     override func didReceiveMemoryWarning() {
@@ -30,14 +30,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)!) {
         // Perform any setup necessary in order to update the view.
 
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
 
-        completionHandler(NCUpdateResult.NewData)
+        completionHandler(NCUpdateResult.newData)
     }
     
     func timeUntilDeparture() {
@@ -72,7 +72,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         counterWidgetLabel.text = output
     }
     
-    func checkEmpty(piv_input:String) -> String {
+    func checkEmpty(_ piv_input:String) -> String {
         var output = piv_input
         
         if output != "" {
